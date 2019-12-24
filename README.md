@@ -11,3 +11,5 @@ git subtree push --prefix server heroku master
 ```
 
 The git remote for the Heroku deployment is `https://git.heroku.com/intense-tor-63517.git`
+
+Google project: https://console.developers.google.com/apis/dashboard?project=manifest-craft-263020
