@@ -104,4 +104,4 @@ dist
 .tern-port
 
 # Project config files
-server/config/keys.js
+server/config/dev.js
