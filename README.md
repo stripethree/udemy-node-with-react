@@ -10,5 +10,8 @@ Heroku only supports NodeJS projects with a `package.json` file at the project r
 git subtree push --prefix server heroku master
 ```
 
-The git remote for the Heroku deployment is `https://git.heroku.com/intense-tor-63517.git`
-Google project: https://console.developers.google.com/apis/dashboard?project=manifest-craft-263020
+## Additional Information
+
+- Git remote for the Heroku deployment: `https://git.heroku.com/intense-tor-63517.git`
+- [Google project (dev)](https://console.developers.google.com/apis/dashboard?project=manifest-craft-263020)
+- [MongoDB cluster (dev)](https://cloud.mongodb.com/v2/5e050f2179358e85069be8da#clusters)
