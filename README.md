@@ -15,3 +15,8 @@ git subtree push --prefix server heroku master
 - Git remote for the Heroku deployment: `https://git.heroku.com/intense-tor-63517.git`
 - [Google project (dev)](https://console.developers.google.com/apis/dashboard?project=manifest-craft-263020)
 - [MongoDB cluster (dev)](https://cloud.mongodb.com/v2/5e050f2179358e85069be8da#clusters)
+
+### Off the shelf things
+
+- [Passport](http://www.passportjs.org/): used for the Google Auth integration
+- [Materialize](https://materializecss.com/): material design based front-end framework
