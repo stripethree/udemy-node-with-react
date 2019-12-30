@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
-const RecipientSchema = require("./recipient");
+const RecipientSchema = require("./Recipient");
 
 const surveySchema = new Schema({
   body: String,
