@@ -34,7 +34,7 @@ class Mailer extends helper.Mail {
     this.addPersonalization(personalize);
   }
 
-  formatAddressres(recipients) {
+  formatAddresses(recipients) {
     return recipients.map(({ email }) => new helper.Email(email));
   }
 
