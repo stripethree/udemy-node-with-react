@@ -24,3 +24,12 @@ The application make use of web hooks for SendGrid to provide click through Info
 
 - [Passport](http://www.passportjs.org/): used for the Google Auth integration
 - [Materialize](https://materializecss.com/): material design based front-end framework
+
+## Ideas on expanding the app
+
+- Dashboard: some way to show what recipients have responded to a survey
+- Improve the design of the survey cars
+- Allow users to delete surveys that have been created
+- Allow users to specify the 'from' field on survey emails
+- Allow client side sorting of surveys
+- Allow surveys to be created in _draft mode_
