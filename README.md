@@ -10,6 +10,10 @@ Heroku only supports NodeJS projects with a `package.json` file at the project r
 git subtree push --prefix server heroku master
 ```
 
+## Local development with `ngrok`
+
+The application make use of web hooks for SendGrid to provide click through Information back to the web application. Each time `ngrok` is started or the URL is refreshed, the _HTTP POST URL_ under _Event Notification_ settings needs to be updated in _Send Grid_.
+
 ## Additional Information
 
 - Git remote for the Heroku deployment: `https://git.heroku.com/intense-tor-63517.git`
