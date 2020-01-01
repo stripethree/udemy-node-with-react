@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import SurveyField from "./SurveyField";
 import validateEmails from "../../utils/validateEmails";
 
+// TODO: add 'valueError' field for better error messages
 const FIELDS = [
   {
     label: "Survey Title",
@@ -43,7 +44,7 @@ class SurveyForm extends Component {
   render() {
     return (
       <div>
-        <form onSubmit={this.props.handleSubmit(values => console.log(values))}>
+        <form onSubmit={this.props.handleSubmit(this.props.onSurveySubmit)}>
           {this.renderFields()}
           <Link className="red btn-flat white-text" to="/surveys">
             Cancel
@@ -64,7 +65,7 @@ function validate(values) {
 
   _.each(FIELDS, ({ name }) => {
     if (!values[name]) {
-      errors[name] = `You must provide a ${name}.`;
+      errors[name] = "You must provide a value.";
     }
   });
 
