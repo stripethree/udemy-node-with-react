@@ -24,6 +24,7 @@ The application make use of web hooks for SendGrid to provide click through Info
 
 - [Passport](http://www.passportjs.org/): used for the Google Auth integration
 - [Materialize](https://materializecss.com/): material design based front-end framework
+- [Instructor's Code Repo](https://github.com/StephenGrider/FullstackReactCode)
 
 ## Ideas on expanding the app
 
