@@ -20,8 +20,10 @@ class SurveyList extends Component {
             </p>
           </div>
           <div className="card-action">
-            <a>Yes: {survey.yes}</a>
-            <a>No: {survey.no}</a>
+            <span className="yellow-text" style={{ marginRight: "10px" }}>
+              Yes: {survey.yes}
+            </span>
+            <span className="yellow-text">No: {survey.no}</span>
           </div>
         </div>
       );
