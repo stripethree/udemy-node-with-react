@@ -17,7 +17,7 @@ export const handleToken = token => async dispatch => {
 };
 
 export const saveDraft = (values, history) => async dispatch => {
-  const res = await axois.post("/api/surveys/draft", values);
+  const res = await axios.post("/api/surveys/draft", values);
   history.push("/surveys");
 
   dispatch({ type: FETCH_USER, payload: res.data });
