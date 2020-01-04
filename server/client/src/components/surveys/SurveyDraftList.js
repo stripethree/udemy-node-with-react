@@ -29,9 +29,7 @@ class SurveyList extends Component {
   }
 }
 
-function mapStateToProps(state) {
-  console.log(state);
-  const { surveyDrafts } = state;
+function mapStateToProps({ surveyDrafts }) {
   return { surveyDrafts };
 }
 
