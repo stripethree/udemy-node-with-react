@@ -9,6 +9,7 @@ const Mailer = require("../services/Mailer");
 const surveyTemplate = require("../services/emailTemplates/surveyTemplate");
 
 const Survey = mongoose.model("surveys");
+const SurveyDraft = mongoose.model("surveyDrafts");
 
 module.exports = app => {
   app.get("/api/surveys", requireLogin, async (req, res) => {
@@ -41,6 +42,26 @@ module.exports = app => {
       req.user.credits -= 1;
       const user = await req.user.save();
       res.send(user);
+    } catch (err) {
+      res.status(422).send(err);
+    }
+  });
+
+  app.post("/api/surveys/draft", requireLogin, async (req, res) => {
+    const { title, subject, body, recipients } = req.body;
+
+    const surveyDraft = new SurveyDraft({
+      title,
+      subject,
+      body,
+      recipients,
+      _user: req.user.id,
+      dateSaved: Date.now()
+    });
+
+    try {
+      await surveyDraft.save();
+      res.send(req.user);
     } catch (err) {
       res.status(422).send(err);
     }
