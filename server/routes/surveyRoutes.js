@@ -47,6 +47,13 @@ module.exports = app => {
     }
   });
 
+  app.get("/api/surveys/draft", requireLogin, async (req, res) => {
+    const surveyDrafts = await SurveyDraft.find({
+      _user: req.user.id
+    });
+    res.send(surveyDrafts);
+  });
+
   app.post("/api/surveys/draft", requireLogin, async (req, res) => {
     const { title, subject, body, recipients } = req.body;
 
