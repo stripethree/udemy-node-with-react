@@ -21,6 +21,13 @@ module.exports = app => {
     res.send(surveys);
   });
 
+  app.get("/api/surveys/:id", requireLogin, async (req, res) => {
+    const surveyId = req.params.id;
+    const survey = await Survey.findById(surveyId);
+    console.log(survey);
+    res.send(survey);
+  });
+
   app.post("/api/surveys", requireLogin, requireCredits, async (req, res) => {
     const { title, subject, body, recipients } = req.body;
 

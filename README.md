@@ -20,16 +20,18 @@ The application make use of web hooks for SendGrid to provide click through Info
 - [Google project (dev)](https://console.developers.google.com/apis/dashboard?project=manifest-craft-263020)
 - [MongoDB cluster (dev)](https://cloud.mongodb.com/v2/5e050f2179358e85069be8da#clusters)
 
-### Off the shelf things
+### Project Resources
 
-- [Passport](http://www.passportjs.org/): used for the Google Auth integration
 - [Materialize](https://materializecss.com/): material design based front-end framework
+- [Passport](http://www.passportjs.org/): used for the Google Auth integration
+- [SendGrid](https://app.sendgrid.com/)
+- [Stripe](https://dashboard.stripe.com/test/dashboard)
 - [Instructor's Code Repo](https://github.com/StephenGrider/FullstackReactCode)
 
 ## Ideas on expanding the app
 
 - Dashboard: some way to show what recipients have responded to a survey
-- Improve the design of the survey cars
+- Improve the design of the survey cards
 - Allow users to delete surveys that have been created
 - Allow users to specify the 'from' field on survey emails
 - Allow client side sorting of surveys
